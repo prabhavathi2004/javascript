@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Community Event Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    #event-list div, .card { padding: 10px; border: 1px solid #ccc; margin: 10px 0; }
+    #message { margin-top: 20px; font-weight: bold; }
+  </style>
+  <script src="main.js" defer></script>
+</head>
+<body>
+
+  <h1>Local Community Events</h1>
+
+  <div id="event-list"></div>
+
+  <form id="registerForm">
+    <h2>Register for Event</h2>
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <select name="event">
+      <option value="Music Festival">Music Festival</option>
+      <option value="Tech Meetup">Tech Meetup</option>
+    </select>
+    <button type="submit">Register</button>
+  </form>
+
+  <div id="message"></div>
+
+</body>
+</html>
